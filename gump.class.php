@@ -345,7 +345,7 @@ class GUMP
 					$resp[] = "The $field field needs to contain a valid human name";
 					break;
 				case 'validate_contains':
-					$resp[] = "The $field field needs contain one of these values: ".implode(', ', $param);
+					$resp[] = "The $field field needs to contain one of these values: ".implode(', ', $param);
 					break;
 				case 'validate_street_address':
 					$resp[] = "The $field field needs to be a valid street address";
