@@ -1,0 +1,6 @@
+{
+    "name": "sodacan/GUMP",
+    "autoload": {
+        "classmap": ["gump.class.php"]
+    }
+}
