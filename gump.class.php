@@ -620,7 +620,14 @@ class GUMP
 	{
 		$param = trim(strtolower($param));
 
-		$value = trim(strtolower($input[$field]));
+        if (isset($input[$field]))
+        {
+            $value = trim(strtolower($input[$field]));
+        }
+        else
+        {
+            $value = null;
+        }
 
 		if (preg_match_all('#\'(.+?)\'#', $param, $matches, PREG_PATTERN_ORDER)) {
 			$param = $matches[1];
